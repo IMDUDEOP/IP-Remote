@@ -6,7 +6,7 @@ A simple and intuitive GUI application for controlling your Android TV using ADB
 
 ## 🚀 Features
 
-- Connect to Android TV via ADB over Wi-Fi
+- Connect to Android TV via ADB over Wi-Fi or Tailscale
 - Send navigation commands (Up, Down, Left, Right, OK, Back, Home)
 - Control volume (Volume Up, Volume Down, Mute)
 - Input text using the on-screen keyboard
@@ -35,12 +35,13 @@ A simple and intuitive GUI application for controlling your Android TV using ADB
 
 # 🪟 Windows (CMD / PowerShell)
 
-```bash
 :: 1. Install Python from https://www.python.org/downloads/
 :: 2. Download and extract Platform Tools from:
 ::    https://developer.android.com/studio/releases/platform-tools
 
 :: 3. Add ADB to PATH (replace with actual path)
+
+```bash
 setx PATH "%PATH%;C:\Path\To\platform-tools"
 ```
 :: 4. Clone and run the project
@@ -48,18 +49,20 @@ setx PATH "%PATH%;C:\Path\To\platform-tools"
 ```bash
 git clone https://github.com/IMDUDEOP/IP-Remote.git
 cd IP-Remote
-python android_tv_remote.py
+python main.py
 ```
 
 # 🍎 macOS (Terminal)
 
 # 1. Install Python, Tkinter, and ADB
-  
-```bash
+
 # 1. Install Python & ADB
+
+```bash
 brew install python
 brew install android-platform-tools
 ```
+
 # 2. Clone and run the project
 
 ```bash
@@ -80,7 +83,7 @@ sudo apt-get install python3 python3-tk android-tools-adb -y
 ```bash
 git clone https://github.com/IMDUDEOP/IP-Remote.git
 cd IP-Remote
-python3 android_tv_remote.py
+python3 main.py
 ```
 </details>
 
@@ -96,3 +99,7 @@ Click Connect to establish the ADB connection.
 Use the navigation buttons or gesture area to control your TV.
 
 Use the text box to send keyboard input.
+
+---
+
+## NOTE: I'm a linux user, so if you encounter any problem on different OS please conatcct me on: dudeop672@gmail.com
